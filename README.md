@@ -1,17 +1,21 @@
 # Apresentacao Paulo
 
-Projeto de página pessoal estática desenvolvido com HTML e CSS para apresentar o perfil profissional de Paulo José.
+Projeto de portfólio pessoal desenvolvido com HTML e CSS para apresentar Paulo Jose, sua transicao para a area de tecnologia e seus canais profissionais.
 
-## Sobre o projeto
+## Visao geral
 
-Esta aplicação é uma landing page simples de apresentação pessoal. O conteúdo destaca:
+O site foi criado como uma pagina de apresentacao pessoal com navegacao simples e visual moderno. O projeto possui duas paginas principais:
 
-- nome e área de atuação;
-- breve descrição profissional;
-- links para LinkedIn e GitHub;
-- foto de perfil.
+- `index.html`: pagina inicial com apresentacao, destaque profissional e links para redes.
+- `about.html`: pagina com um texto mais detalhado sobre a trajetoria e os objetivos profissionais.
 
-O objetivo do projeto é servir como cartão de visita online, com foco em layout limpo, destaque visual e navegação direta para redes profissionais.
+## Funcionalidades
+
+- menu superior com navegacao entre as paginas;
+- secao principal com texto de apresentacao;
+- links para LinkedIn, GitHub e Alura;
+- foto de perfil com destaque visual;
+- identidade visual personalizada com cores, tipografia e efeitos de hover.
 
 ## Tecnologias utilizadas
 
@@ -23,49 +27,42 @@ O objetivo do projeto é servir como cartão de visita online, com foco em layou
 
 ```text
 .
+|-- about.html
 |-- index.html
+|-- README.md
 |-- style.css
-|-- foto_de_perfil.jpg
-`-- README.md
+`-- assets/
+    |-- alura.png
+    |-- foto_de_perfil.jpg
+    |-- github.png
+    `-- linkedin.png
 ```
 
 ## Como executar
 
-Como o projeto é estático, não é necessário instalar dependências.
+Nao e necessario instalar dependencias, porque este e um projeto estatico.
 
-### Acesso online
-
-O projeto está hospedado em:
-
-[https://paulo-jbs.github.io/](https://paulo-jbs.github.io/)
-
-Para abrir, basta clicar no link acima ou colar o endereço no navegador.
-
-### Execução local
-
-1. Baixe ou clone este repositório.
+1. Baixe ou clone este repositorio.
 2. Abra o arquivo `index.html` no navegador.
 
-Se preferir, também é possível usar a extensão `Live Server` no VS Code para visualizar a página com atualização automática.
+Se preferir, voce tambem pode usar a extensao Live Server no VS Code para visualizar as alteracoes automaticamente.
 
-## Personalização
+## Personalizacao
 
-Você pode adaptar facilmente o projeto alterando:
+Voce pode adaptar o projeto alterando:
 
-- `index.html`: textos, título da página, links e descrição pessoal;
-- `style.css`: cores, fontes, espaçamentos e organização do layout;
-- `foto_de_perfil.jpg`: imagem exibida na apresentação.
+- `index.html`: titulo, texto principal e links das redes sociais;
+- `about.html`: conteudo da secao "Sobre mim";
+- `style.css`: cores, fontes, espacamentos, bordas e layout;
+- `assets/`: imagens, icones e foto de perfil.
 
-## Funcionalidades
+## Objetivo do projeto
 
-- apresentação pessoal em uma única página;
-- layout com destaque para nome e descrição;
-- botões com acesso rápido ao LinkedIn e GitHub;
-- imagem de perfil com estilo personalizado.
+Este projeto funciona como um cartao de visita online e tambem como pratica de desenvolvimento front-end, com foco em estrutura HTML, estilizacao com CSS e organizacao de uma pagina pessoal.
 
 ## Melhorias futuras
 
 - adicionar responsividade para telas menores;
-- incluir ícones nas redes sociais;
-- criar animações sutis de entrada;
-- adicionar uma seção com projetos ou portfólio.
+- incluir mais secoes, como projetos e habilidades;
+- melhorar acessibilidade com ajustes adicionais de contraste e navegacao;
+- adicionar animacoes sutis para enriquecer a experiencia visual.
