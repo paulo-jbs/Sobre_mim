@@ -29,6 +29,8 @@ body {
 .menu {
   display: flex;
   align-items: center;
+  /* Permite quebrar os links em mais de uma linha se faltar espaco */
+  flex-wrap: wrap;
   gap: 5%;
   font-family: var(--font-secundaria);
   font-size: 1.2rem;
@@ -50,6 +52,98 @@ body {
   border-radius: 8px;
   transition: 0.7s;
   transform: translateY(-10%);
+}
+
+/* Espacamento geral da pagina de projetos */
+.projetos {
+  padding: 5% 8%;
+}
+
+/* Empilha titulo, introducao e grade verticalmente */
+.projetos__conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Limita a largura do texto introdutorio para nao ficar longo demais */
+.projetos__intro {
+  max-width: 900px;
+}
+
+/* Cria a grade com 2 colunas para os 4 cards */
+.projetos__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  /* Faz os itens ocuparem a mesma altura dentro da linha */
+  align-items: stretch;
+}
+
+/* Estrutura do card: conteudo em cima e botao preso na parte de baixo */
+.projeto__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Altura minima ajuda a manter os cards visualmente padronizados */
+  min-height: 280px;
+  padding: 32px;
+  border: 2px solid rgba(34, 212, 253, 0.45);
+  border-radius: 24px;
+  background: linear-gradient(145deg, rgba(34, 212, 253, 0.14), rgba(255, 255, 255, 0.04));
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.projeto__card:hover {
+  /* Move levemente o card para cima para destacar no hover */
+  transform: translateY(-10px) scale(1.01);
+  border-color: var(--cor-terciaria);
+  box-shadow: 0 24px 50px rgba(34, 212, 253, 0.18);
+}
+
+/* Agrupa titulo e descricao com espacamento interno consistente */
+.projeto__card__conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.projeto__card__titulo {
+  font-size: 1.4rem;
+  font-family: var(--font-primaria);
+  color: var(--cor-terciaria);
+}
+
+.projeto__card__descricao {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-family: var(--font-secundaria);
+  color: var(--cor-secundaria);
+}
+
+.projeto__botao {
+  /* fit-content faz o botao ocupar apenas o espaco do proprio texto */
+  width: fit-content;
+  /* Empurra o botao para baixo quando o card tiver menos texto */
+  margin-top: 28px;
+  padding: 14px 24px;
+  border: 2px solid var(--cor-terciaria);
+  border-radius: 999px;
+  background-color: transparent;
+  color: var(--cor-secundaria);
+  text-decoration: none;
+  font-family: var(--font-secundaria);
+  font-size: 1rem;
+  font-weight: 700;
+  transition: background-color 0.35s ease, color 0.35s ease, transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.projeto__botao:hover {
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(34, 212, 253, 0.28);
 }
 
 .apresentacao {
@@ -159,6 +253,8 @@ footer {
   .menu {
     padding: 1%;
     justify-content: center;
+    /* Diminui o espacamento no mobile/tablet para o menu caber melhor */
+    gap: 16px;
   }
 
   .apresentacao {
@@ -170,5 +266,10 @@ footer {
   }
   .imagem {
     align-self: center;
+  }
+
+  /* Em telas menores, os cards passam a ficar um abaixo do outro */
+  .projetos__grid {
+    grid-template-columns: 1fr;
   }
 }

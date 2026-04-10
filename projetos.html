@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Projetos</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav class="menu">
+        <a class="menu__link" href="index.html">Home</a>
+        <a class="menu__link" href="about.html">Sobre mim</a>
+        <!-- O usuario consegue chegar nesta pagina pelo proprio cabecalho -->
+        <a class="menu__link" href="projetos.html">Projetos</a>
+      </nav>
+    </header>
+
+    <main class="projetos">
+      <section class="projetos__conteudo">
+        <h1 class="apresentacao__conteudo__titulo">Projetos</h1>
+        <!-- Texto de introducao antes da lista de cards -->
+        <p class="apresentacao__conteudo__texto projetos__intro">
+          Alguns projetos que representam minha evolucao pratica em
+          desenvolvimento web, logica e construcao de interfaces.
+        </p>
+
+        <!-- Grade com 4 projetos. O CSS organiza 2 cards por linha em telas maiores -->
+        <div class="projetos__grid">
+          <!-- Cada article funciona como um card independente de projeto -->
+          <article class="projeto__card">
+            <!-- Esta div agrupa titulo e descricao para o botao ficar sempre alinhado embaixo -->
+            <div class="projeto__card__conteudo">
+              <h2 class="projeto__card__titulo">Portfolio Pessoal</h2>
+              <p class="projeto__card__descricao">
+                Site desenvolvido para apresentar minha trajetoria, habilidades,
+                links profissionais e minha identidade como desenvolvedor em
+                formacao.
+              </p>
+            </div>
+            <!-- Botao que leva para o projeto. Aqui ele abre a pagina inicial do portfolio -->
+            <a class="projeto__botao" href="index.html">Abrir projeto</a>
+          </article>
+
+          <article class="projeto__card">
+            <div class="projeto__card__conteudo">
+              <h2 class="projeto__card__titulo">PauloFlix</h2>
+              <p class="projeto__card__descricao">
+                Projeto de estudos em front-end inspirado na experiencia visual
+                de plataformas de streaming. O foco principal do meu trabalho
+                foi construir e personalizar a tela inicial, integrar a escolha
+                de perfis com o catalogo e melhorar a experiencia visual,
+                responsiva e interativa da aplicacao.
+              </p>
+            </div>
+            <!-- Substitua o # pelo link real quando este projeto estiver publicado -->
+            <a
+              class="projeto__botao"
+              href="https://paulo-jbs.github.io/PauloFlix/"
+              >Abrir projeto</a
+            >
+          </article>
+
+          <article class="projeto__card">
+            <div class="projeto__card__conteudo">
+              <h2 class="projeto__card__titulo">Combo Plus</h2>
+              <p class="projeto__card__descricao">
+                Landing page estática inspirada na proposta visual do Combo+ da
+                Alura, desenvolvida com HTML e CSS. O projeto apresenta uma
+                página promocional com banner principal, seções de benefícios,
+                dispositivos compatíveis e rodapé institucional.
+              </p>
+            </div>
+            <!-- Substitua o # pelo link real quando este projeto estiver publicado -->
+            <a
+              class="projeto__botao"
+              href="https://paulo-jbs.github.io/combo_plus/"
+              >Abrir projeto</a
+            >
+          </article>
+
+          <article class="projeto__card">
+            <div class="projeto__card__conteudo">
+              <h2 class="projeto__card__titulo">Projeto Full Stack</h2>
+              <p class="projeto__card__descricao">
+                Em construção...
+              </p>
+            </div>
+            <!-- Substitua o # pelo link real quando este projeto estiver publicado -->
+            <a class="projeto__botao" href="#">Abrir projeto</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>Desenvolvido por Paulo José</footer>
+  </body>
+</html>
